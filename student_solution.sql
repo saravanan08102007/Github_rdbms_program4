@@ -1,22 +1,16 @@
--- =========================================
--- SQL Assignment: Create Course Table
--- Name:
--- Register Number:
--- =========================================
+CREATE TABLE Course (
+    CourseID INT PRIMARY KEY,
+    CourseName VARCHAR(100),
+    Credits INT,
+    DepartmentID INT
+);
 
--- Create a table named Course with:
--- CourseID
--- CourseName
--- Credits
--- DepartmentID
+INSERT INTO Course (CourseID, CourseName, Credits, DepartmentID)
+VALUES
+(101, 'Computer Science', 4, 1),
+(102, 'Database Management', 3, 1),
+(103, 'Data Structures', 4, 2);
 
--- Add CourseID as PRIMARY KEY.
+DESCRIBE Course;
 
-
--- Insert at least 3 records.
-
-
--- Display the table structure using DESCRIBE.
-
-
--- Display all records.
+SELECT * FROM Course;
